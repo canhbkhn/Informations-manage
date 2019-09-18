@@ -8,3 +8,15 @@ C:\Users\CanhVV\source\repos\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythong
 C:\Users\CanhVV\source\repos\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.csproj.CoreCompileInputs.cache
 C:\Users\CanhVV\source\repos\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.exe
 C:\Users\CanhVV\source\repos\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.pdb
+C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\bin\Debug\Quanlythongtin.exe.config
+C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\bin\Debug\Quanlythongtin.exe
+C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\bin\Debug\Quanlythongtin.pdb
+C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.csprojAssemblyReference.cache
+C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.Employee.resources
+C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.MainForm.resources
+C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.Properties.Resources.resources
+C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.Search.resources
+C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.csproj.GenerateResource.cache
+C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.csproj.CoreCompileInputs.cache
+C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.exe
+C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.pdb

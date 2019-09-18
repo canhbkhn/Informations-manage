@@ -30,12 +30,17 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnExit = new System.Windows.Forms.Button();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
+            this.name});
             this.dataGridView1.Location = new System.Drawing.Point(13, 13);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(953, 244);
@@ -49,6 +54,16 @@
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = true;
+            // 
+            // id
+            // 
+            this.id.HeaderText = "Mã nhân viên";
+            this.id.Name = "id";
+            // 
+            // name
+            // 
+            this.name.HeaderText = "Họ tên";
+            this.name.Name = "name";
             // 
             // Employee
             // 
@@ -68,5 +83,7 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
     }
 }

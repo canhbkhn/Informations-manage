@@ -21,5 +21,17 @@ namespace Quanlythongtin
         {
 
         }
+
+        private void btnTTNV_Click(object sender, EventArgs e)
+        {
+            Search search = new Search();
+            search.Show();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Exit();
+        }
     }
 }
