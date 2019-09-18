@@ -1,0 +1,10 @@
+C:\Users\CanhVV\source\repos\Quanlythongtin\Quanlythongtin\bin\Debug\Quanlythongtin.exe.config
+C:\Users\CanhVV\source\repos\Quanlythongtin\Quanlythongtin\bin\Debug\Quanlythongtin.exe
+C:\Users\CanhVV\source\repos\Quanlythongtin\Quanlythongtin\bin\Debug\Quanlythongtin.pdb
+C:\Users\CanhVV\source\repos\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.csprojAssemblyReference.cache
+C:\Users\CanhVV\source\repos\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.MainForm.resources
+C:\Users\CanhVV\source\repos\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.Properties.Resources.resources
+C:\Users\CanhVV\source\repos\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.csproj.GenerateResource.cache
+C:\Users\CanhVV\source\repos\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.csproj.CoreCompileInputs.cache
+C:\Users\CanhVV\source\repos\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.exe
+C:\Users\CanhVV\source\repos\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.pdb
