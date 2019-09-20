@@ -64,6 +64,16 @@ namespace Quanlythongtin
             return birthDay;
         }
 
+        public void setIdentifyNumber(string identifyNumber)
+        {
+            IdentifyNumber = identifyNumber;
+        }
+
+        public string getIdentifyNumber()
+        {
+            return IdentifyNumber;
+        }
+
         public void setGender(string Gender)
         {
             gender = Gender;

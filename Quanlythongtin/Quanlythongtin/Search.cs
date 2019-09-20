@@ -16,5 +16,19 @@ namespace Quanlythongtin
         {
             InitializeComponent();
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            this.Close();
+
+            return;
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            Employee employ = new Employee();
+            employ.Show();
+        }
     }
 }

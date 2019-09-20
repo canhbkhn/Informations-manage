@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.tbHotenTimkiem = new System.Windows.Forms.TextBox();
+            this.tbIdTimkiem = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnReinput = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnViewAll = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tbHotenTimkiem);
+            this.groupBox1.Controls.Add(this.tbIdTimkiem);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
@@ -53,14 +53,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin tìm kiếm";
             // 
-            // label1
+            // tbHotenTimkiem
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ID";
+            this.tbHotenTimkiem.Location = new System.Drawing.Point(74, 85);
+            this.tbHotenTimkiem.Name = "tbHotenTimkiem";
+            this.tbHotenTimkiem.Size = new System.Drawing.Size(305, 20);
+            this.tbHotenTimkiem.TabIndex = 3;
+            // 
+            // tbIdTimkiem
+            // 
+            this.tbIdTimkiem.Location = new System.Drawing.Point(74, 36);
+            this.tbIdTimkiem.Name = "tbIdTimkiem";
+            this.tbIdTimkiem.Size = new System.Drawing.Size(305, 20);
+            this.tbIdTimkiem.TabIndex = 2;
             // 
             // label2
             // 
@@ -71,65 +76,62 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Họ tên";
             // 
-            // textBox1
+            // label1
             // 
-            this.textBox1.Location = new System.Drawing.Point(74, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(305, 20);
-            this.textBox1.TabIndex = 2;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(18, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ID";
             // 
-            // textBox2
+            // btnSearch
             // 
-            this.textBox2.Location = new System.Drawing.Point(74, 85);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(305, 20);
-            this.textBox2.TabIndex = 3;
+            this.btnSearch.Location = new System.Drawing.Point(112, 158);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 1;
+            this.btnSearch.Text = "Tìm kiếm";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // button1
+            // btnReinput
             // 
-            this.button1.Location = new System.Drawing.Point(112, 158);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Tìm kiếm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnReinput.Location = new System.Drawing.Point(215, 158);
+            this.btnReinput.Name = "btnReinput";
+            this.btnReinput.Size = new System.Drawing.Size(75, 23);
+            this.btnReinput.TabIndex = 2;
+            this.btnReinput.Text = "Nhập lại";
+            this.btnReinput.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnCancel
             // 
-            this.button2.Location = new System.Drawing.Point(215, 158);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Nhập lại";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCancel.Location = new System.Drawing.Point(317, 158);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.TabIndex = 3;
+            this.btnCancel.Text = "Hủy bỏ";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // button3
+            // btnViewAll
             // 
-            this.button3.Location = new System.Drawing.Point(317, 158);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Hủy bỏ";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(13, 158);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Xem toàn bộ";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnViewAll.Location = new System.Drawing.Point(13, 158);
+            this.btnViewAll.Name = "btnViewAll";
+            this.btnViewAll.Size = new System.Drawing.Size(75, 23);
+            this.btnViewAll.TabIndex = 4;
+            this.btnViewAll.Text = "Xem toàn bộ";
+            this.btnViewAll.UseVisualStyleBackColor = true;
             // 
             // Search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(410, 193);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnViewAll);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnReinput);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.groupBox1);
             this.Name = "Search";
             this.Text = "Search";
@@ -142,13 +144,13 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbHotenTimkiem;
+        private System.Windows.Forms.TextBox tbIdTimkiem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnReinput;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnViewAll;
     }
 }
