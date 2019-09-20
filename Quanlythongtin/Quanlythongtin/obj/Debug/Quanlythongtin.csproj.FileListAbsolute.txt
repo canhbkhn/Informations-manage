@@ -20,3 +20,4 @@ C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlython
 C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.csproj.CoreCompileInputs.cache
 C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.exe
 C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.pdb
+C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.exe.config
