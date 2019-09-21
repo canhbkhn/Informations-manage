@@ -103,6 +103,7 @@
             this.btnReinput.TabIndex = 2;
             this.btnReinput.Text = "Nhập lại";
             this.btnReinput.UseVisualStyleBackColor = true;
+            this.btnReinput.Click += new System.EventHandler(this.btnReinput_Click);
             // 
             // btnCancel
             // 
@@ -122,6 +123,7 @@
             this.btnViewAll.TabIndex = 4;
             this.btnViewAll.Text = "Xem toàn bộ";
             this.btnViewAll.UseVisualStyleBackColor = true;
+            this.btnViewAll.Click += new System.EventHandler(this.btnViewAll_Click);
             // 
             // Search
             // 

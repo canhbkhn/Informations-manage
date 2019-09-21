@@ -33,7 +33,6 @@ namespace Quanlythongtin
         private string email;                           // địa chỉ email
         private string married;                         // tình trạng hôn nhân
         private string statusOfWork;                    // trạng thái nhân viên: làm việc | đã nghỉ
-
         private string pathImg;                         // đường dẫn lưu ảnh nhân viên
 
         // method
@@ -96,7 +95,6 @@ namespace Quanlythongtin
         {
             return workingTime;
         }
-        
 
         public void setAddress(string Address)
         {
@@ -228,8 +226,6 @@ namespace Quanlythongtin
             return pathImg;
         }
 
-
-
         /// <summary>
         /// default constructor
         /// </summary>
@@ -258,18 +254,15 @@ namespace Quanlythongtin
         // set information from input form
         public void setNhanvienInfor(NhanVien nhanvien)
         {
-            //NhanVien nhanvien = new NhanVien();
 
             nhanvien.setName(this.tbName.Text.ToString());
             nhanvien.setId(this.tbId.Text.ToString());
             nhanvien.setBirthDay(this.tbNamsinh.Text.ToString());
             nhanvien.setGender(this.cbGioiTinh.Text.ToString());
             nhanvien.setWorkingTime(this.cbWorkingTime.Text.ToString());
-            //
             nhanvien.setAddress(this.tbDiachi.Text.ToString());
             nhanvien.setPhoneNumber(this.tbSdt.Text.ToString());
             nhanvien.setLiteracy(this.cbHocvan.Text.ToString());
-
             nhanvien.setWorkOn(this.tbNgayvao.Text.ToString());
             nhanvien.setWorkOff(this.tbNgayra.Text.ToString());
             nhanvien.setNation(this.tbDantoc.Text.ToString());
@@ -279,11 +272,10 @@ namespace Quanlythongtin
             nhanvien.setEmail(this.tbEmail.Text.ToString());
             nhanvien.setMarryStatus(this.cbKethon.Text.ToString());
             nhanvien.setStatusOfWork(this.cbTinhTrangNv.Text.ToString());
+            nhanvien.setPathImg(getPathImg());
         }
 
-        // get information from input form
-        
-
+        // get information from input form    
         private void btnSaveDataNv_Click(object sender, EventArgs e)
         {
             // get employee information from input form
@@ -302,7 +294,6 @@ namespace Quanlythongtin
                 wt.Close();
             }
            
-
             // create json object nhan vien to save
             JObject nvOb = new JObject(
                 new JProperty("name", nv.getName()),
@@ -321,7 +312,8 @@ namespace Quanlythongtin
                 new JProperty("role", nv.getRole()),
                 new JProperty("email", nv.getEmail()),
                 new JProperty("marrystatus", nv.getMarryStatus()),
-                new JProperty("workstatus", nv.getWorkStatus())
+                new JProperty("workstatus", nv.getWorkStatus()),
+                new JProperty("imagefilepath", nv.getPathImg())
                 );
 
             JArray array;
@@ -332,8 +324,7 @@ namespace Quanlythongtin
             }
             else
             {
-                array = JArray.Parse(File.ReadAllText("../../../data/nhanvien.json"));
-                
+                array = JArray.Parse(File.ReadAllText("../../../data/nhanvien.json"));    
             }
 
             array.Add(nvOb);
@@ -342,8 +333,7 @@ namespace Quanlythongtin
 
             Console.WriteLine("nhan vien -> " + array);
 
-            Console.WriteLine("Done!");
-            
+            Console.WriteLine("Done!");   
         }
 
         private void btnReInput_Click(object sender, EventArgs e)
@@ -365,6 +355,23 @@ namespace Quanlythongtin
             this.tbEmail.Text = string.Empty;
             this.cbKethon.Text = string.Empty;
             this.cbTinhTrangNv.Text = string.Empty;
+        }
+
+        private void btnInsertImg_Click(object sender, EventArgs e)
+        {
+            string filePath = string.Empty;
+
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.Filter = "jpg files (*.jpg)|*.jpg|png file (*.png)|*.png|All files (*.*)|*.*";
+
+            if(fileDialog.ShowDialog() == DialogResult.OK)
+            {
+                filePath = fileDialog.FileName;
+
+            }
+
+            Console.WriteLine("img path -> " + filePath);
+            setPathImg(filePath);
         }
     }
 }

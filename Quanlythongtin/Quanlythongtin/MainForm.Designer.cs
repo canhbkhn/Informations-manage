@@ -468,6 +468,7 @@
             this.btnInsertImg.TabIndex = 3;
             this.btnInsertImg.Text = "Chèn";
             this.btnInsertImg.UseVisualStyleBackColor = true;
+            this.btnInsertImg.Click += new System.EventHandler(this.btnInsertImg_Click);
             // 
             // btnTTNV
             // 

@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace Quanlythongtin
 {
@@ -52,10 +55,51 @@ namespace Quanlythongtin
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            //Search s = new Search();
+            Employee employ = new Employee();
+
+            JArray listFromFile = JArray.Parse(File.ReadAllText(getPath()));
+            JArray savingList = new JArray();
+
+            // get searching pattern
+            string searchPattern = "";
+            if (this.tbIdTimkiem.Text.ToString() != string.Empty)
+            {
+                searchPattern = this.tbIdTimkiem.Text.ToString();
+
+            }      
+            else if (this.tbIdTimkiem.Text.ToString() == string.Empty && this.tbHotenTimkiem.Text.ToString() != string.Empty)
+            {
+                searchPattern = this.tbHotenTimkiem.Text.ToString();
+            }  
+            else if(this.tbIdTimkiem.Text.ToString() == string.Empty && this.tbHotenTimkiem.Text.ToString() == string.Empty)
+                MessageBox.Show("Xin hãy nhập vào thông tin để tìm kiếm");
+
+            foreach(JObject ob in listFromFile)
+            {
+                if(searchPattern == (string)ob["name"] || searchPattern == (string)ob["id"])
+                {
+                    savingList.Add(ob);
+                }
+            }
+
+            // search information of employee mapping search pattern
+            // then display data for user
+            employ.search(savingList);
+            employ.Show();
+        }
+
+        private void btnViewAll_Click(object sender, EventArgs e)
+        {
+            // view all employee through constructor
             NhanVien nv = new NhanVien();
             Employee employ = new Employee(getPath(), nv);
             employ.Show();
+        }
+
+        private void btnReinput_Click(object sender, EventArgs e)
+        {
+            this.tbIdTimkiem.Text = string.Empty;
+            this.tbHotenTimkiem.Text = string.Empty;
         }
     }
 }

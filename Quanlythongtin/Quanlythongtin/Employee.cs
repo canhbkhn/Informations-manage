@@ -63,9 +63,35 @@ namespace Quanlythongtin
             Console.WriteLine("employee -> " + jNv);
         }
 
-        public void search(string searchPattern)
+        public void search(JArray listObj)
         {
+            // log
+            Console.WriteLine("So nhan vien tim thay -> " + listObj.Count);
 
+            for(int i = 0; i < listObj.Count; i++)
+            {
+                string[] row = new string[] {
+                    (string)listObj[i]["id"],
+                    (string)listObj[i]["name"],
+                    (string)listObj[i]["birthday"],
+                    (string)listObj[i]["gender"],
+                    (string)listObj[i]["workingtime"],
+                    (string)listObj[i]["address"],
+                    (string)listObj[i]["phonenumber"],
+                    (string)listObj[i]["literacy"],
+                    (string)listObj[i]["workon"],
+                    (string)listObj[i]["workoff"],
+                    (string)listObj[i]["nation"],
+                    (string)listObj[i]["religion"],
+                    (string)listObj[i]["department"],
+                    (string)listObj[i]["role"],
+                    (string)listObj[i]["email"],
+                    (string)listObj[i]["marrystatus"],
+                    (string)listObj[i]["workstatus"],
+                };
+
+                dataGridView1.Rows.Add(row);
+            }
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
