@@ -269,6 +269,7 @@ namespace Quanlythongtin
             nhanvien.setAddress(this.tbDiachi.Text.ToString());
             nhanvien.setPhoneNumber(this.tbSdt.Text.ToString());
             nhanvien.setLiteracy(this.cbHocvan.Text.ToString());
+
             nhanvien.setWorkOn(this.tbNgayvao.Text.ToString());
             nhanvien.setWorkOff(this.tbNgayra.Text.ToString());
             nhanvien.setNation(this.tbDantoc.Text.ToString());

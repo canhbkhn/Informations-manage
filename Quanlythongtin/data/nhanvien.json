@@ -36,5 +36,24 @@
     "email": "huongntn@gmail.com",
     "marrystatus": "Đã kết hôn",
     "workstatus": "Đang làm việc"
+  },
+  {
+    "name": "",
+    "id": "",
+    "birthday": "",
+    "gender": "",
+    "workingtime": "",
+    "address": "",
+    "phonenumber": "",
+    "literacy": "",
+    "workon": "",
+    "workoff": "",
+    "nation": "",
+    "religion": "",
+    "department": "",
+    "role": "",
+    "email": "",
+    "marrystatus": "",
+    "workstatus": ""
   }
 ]

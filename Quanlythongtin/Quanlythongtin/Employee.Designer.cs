@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnExit = new System.Windows.Forms.Button();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnExit = new System.Windows.Forms.Button();
             this.birthDay = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.workingTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.std = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.literacy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.workOn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.workOff = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,6 +61,7 @@
             this.gender,
             this.workingTime,
             this.address,
+            this.std,
             this.literacy,
             this.workOn,
             this.workOff,
@@ -76,16 +78,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(953, 244);
             this.dataGridView1.TabIndex = 0;
             // 
-            // id
-            // 
-            this.id.HeaderText = "Mã nhân viên";
-            this.id.Name = "id";
-            // 
-            // name
-            // 
-            this.name.HeaderText = "Họ tên";
-            this.name.Name = "name";
-            // 
             // btnExit
             // 
             this.btnExit.Location = new System.Drawing.Point(891, 269);
@@ -95,6 +87,16 @@
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // id
+            // 
+            this.id.HeaderText = "Mã nhân viên";
+            this.id.Name = "id";
+            // 
+            // name
+            // 
+            this.name.HeaderText = "Họ tên";
+            this.name.Name = "name";
             // 
             // birthDay
             // 
@@ -115,6 +117,11 @@
             // 
             this.address.HeaderText = "Địa chỉ";
             this.address.Name = "address";
+            // 
+            // std
+            // 
+            this.std.HeaderText = "Số điện thoại";
+            this.std.Name = "std";
             // 
             // literacy
             // 
@@ -195,6 +202,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn gender;
         private System.Windows.Forms.DataGridViewTextBoxColumn workingTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn address;
+        private System.Windows.Forms.DataGridViewTextBoxColumn std;
         private System.Windows.Forms.DataGridViewTextBoxColumn literacy;
         private System.Windows.Forms.DataGridViewTextBoxColumn workOn;
         private System.Windows.Forms.DataGridViewTextBoxColumn workOff;

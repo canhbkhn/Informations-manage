@@ -33,9 +33,30 @@ namespace Quanlythongtin
 
             int objectLength = jNv.Count;
 
+
             for(int i = 0; i < objectLength; i++)
             {
-                dataGridView1.Rows[i].Cells["Họ tên"].Value = //
+                string[] row = new string[] {
+                    (string)jNv[i]["id"],
+                    (string)jNv[i]["name"],
+                    (string)jNv[i]["birthday"],
+                    (string)jNv[i]["gender"],
+                    (string)jNv[i]["workingtime"],
+                    (string)jNv[i]["address"],
+                    (string)jNv[i]["phonenumber"],
+                    (string)jNv[i]["literacy"],
+                    (string)jNv[i]["workon"],
+                    (string)jNv[i]["workoff"],
+                    (string)jNv[i]["nation"],
+                    (string)jNv[i]["religion"],
+                    (string)jNv[i]["department"],
+                    (string)jNv[i]["role"],
+                    (string)jNv[i]["email"],
+                    (string)jNv[i]["marrystatus"],
+                    (string)jNv[i]["workstatus"],
+                };
+
+                dataGridView1.Rows.Add(row);
             }
 
             Console.WriteLine("so object -> " + objectLength.ToString());
