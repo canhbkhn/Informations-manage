@@ -1,6 +1,6 @@
 ﻿namespace Quanlythongtin
 {
-    partial class MainForm
+    partial class NhanVien
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,8 @@
         {
             this.pbNhanvien = new System.Windows.Forms.PictureBox();
             this.grBasicInfo = new System.Windows.Forms.GroupBox();
+            this.tbCMND = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.cbWorkingTime = new System.Windows.Forms.ComboBox();
             this.cbGioiTinh = new System.Windows.Forms.ComboBox();
             this.tbNamsinh = new System.Windows.Forms.TextBox();
@@ -43,12 +45,10 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label15 = new System.Windows.Forms.Label();
-            this.tbKethon = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.cbPhongban = new System.Windows.Forms.ComboBox();
-            this.tbChucvu = new System.Windows.Forms.TextBox();
+            this.cbChucvu = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.tbTongiao = new System.Windows.Forms.TextBox();
@@ -71,9 +71,9 @@
             this.btnSaveDataNv = new System.Windows.Forms.Button();
             this.btnReInput = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
-            this.tbCMND = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbBophan = new System.Windows.Forms.ComboBox();
+            this.cbTinhTrangNv = new System.Windows.Forms.ComboBox();
+            this.cbKethon = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbNhanvien)).BeginInit();
             this.grBasicInfo.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -110,6 +110,22 @@
             this.grBasicInfo.TabIndex = 1;
             this.grBasicInfo.TabStop = false;
             this.grBasicInfo.Text = "Thông tin cơ bản";
+            // 
+            // tbCMND
+            // 
+            this.tbCMND.Location = new System.Drawing.Point(328, 66);
+            this.tbCMND.Name = "tbCMND";
+            this.tbCMND.Size = new System.Drawing.Size(117, 20);
+            this.tbCMND.TabIndex = 11;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(252, 69);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(55, 13);
+            this.label16.TabIndex = 10;
+            this.label16.Text = "Số CMND";
             // 
             // cbWorkingTime
             // 
@@ -214,14 +230,14 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage1.Controls.Add(this.comboBox1);
+            this.tabPage1.Controls.Add(this.cbKethon);
+            this.tabPage1.Controls.Add(this.cbTinhTrangNv);
+            this.tabPage1.Controls.Add(this.cbBophan);
             this.tabPage1.Controls.Add(this.label15);
-            this.tabPage1.Controls.Add(this.tbKethon);
             this.tabPage1.Controls.Add(this.label14);
             this.tabPage1.Controls.Add(this.tbEmail);
             this.tabPage1.Controls.Add(this.label13);
-            this.tabPage1.Controls.Add(this.cbPhongban);
-            this.tabPage1.Controls.Add(this.tbChucvu);
+            this.tabPage1.Controls.Add(this.cbChucvu);
             this.tabPage1.Controls.Add(this.label12);
             this.tabPage1.Controls.Add(this.label11);
             this.tabPage1.Controls.Add(this.tbTongiao);
@@ -254,13 +270,6 @@
             this.label15.TabIndex = 23;
             this.label15.Text = "Tình trạng NV";
             // 
-            // tbKethon
-            // 
-            this.tbKethon.Location = new System.Drawing.Point(435, 57);
-            this.tbKethon.Name = "tbKethon";
-            this.tbKethon.Size = new System.Drawing.Size(132, 20);
-            this.tbKethon.TabIndex = 22;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -286,10 +295,10 @@
             this.label13.TabIndex = 19;
             this.label13.Text = "Email";
             // 
-            // cbPhongban
+            // cbChucvu
             // 
-            this.cbPhongban.FormattingEnabled = true;
-            this.cbPhongban.Items.AddRange(new object[] {
+            this.cbChucvu.FormattingEnabled = true;
+            this.cbChucvu.Items.AddRange(new object[] {
             "Giám đốc",
             "Nhân viên",
             "Trưởng phòng nhân sự",
@@ -298,17 +307,10 @@
             "Phó phòng hành chính",
             "Kỹ sư",
             "Phó giám đốc"});
-            this.cbPhongban.Location = new System.Drawing.Point(122, 330);
-            this.cbPhongban.Name = "cbPhongban";
-            this.cbPhongban.Size = new System.Drawing.Size(158, 21);
-            this.cbPhongban.TabIndex = 18;
-            // 
-            // tbChucvu
-            // 
-            this.tbChucvu.Location = new System.Drawing.Point(122, 375);
-            this.tbChucvu.Name = "tbChucvu";
-            this.tbChucvu.Size = new System.Drawing.Size(158, 20);
-            this.tbChucvu.TabIndex = 17;
+            this.cbChucvu.Location = new System.Drawing.Point(122, 375);
+            this.cbChucvu.Name = "cbChucvu";
+            this.cbChucvu.Size = new System.Drawing.Size(158, 21);
+            this.cbChucvu.TabIndex = 18;
             // 
             // label12
             // 
@@ -495,6 +497,7 @@
             this.btnReInput.TabIndex = 6;
             this.btnReInput.Text = "Nhập lại";
             this.btnReInput.UseVisualStyleBackColor = true;
+            this.btnReInput.Click += new System.EventHandler(this.btnReInput_Click);
             // 
             // btnExit
             // 
@@ -506,35 +509,45 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // label16
+            // cbBophan
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(252, 69);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(55, 13);
-            this.label16.TabIndex = 10;
-            this.label16.Text = "Số CMND";
+            this.cbBophan.FormattingEnabled = true;
+            this.cbBophan.Items.AddRange(new object[] {
+            "Kỹ thuật",
+            "Hành chính",
+            "Nhân sự",
+            "Tổng hợp",
+            "Kế toán",
+            "Quản trị"});
+            this.cbBophan.Location = new System.Drawing.Point(122, 330);
+            this.cbBophan.Name = "cbBophan";
+            this.cbBophan.Size = new System.Drawing.Size(158, 21);
+            this.cbBophan.TabIndex = 24;
             // 
-            // tbCMND
+            // cbTinhTrangNv
             // 
-            this.tbCMND.Location = new System.Drawing.Point(328, 66);
-            this.tbCMND.Name = "tbCMND";
-            this.tbCMND.Size = new System.Drawing.Size(117, 20);
-            this.tbCMND.TabIndex = 11;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbTinhTrangNv.FormattingEnabled = true;
+            this.cbTinhTrangNv.Items.AddRange(new object[] {
+            "Đã thôi việc",
             "Đang làm việc",
-            "Đã nghỉ việc",
-            "Xin nghỉ dài ngày"});
-            this.comboBox1.Location = new System.Drawing.Point(435, 101);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(132, 21);
-            this.comboBox1.TabIndex = 24;
+            "Nghỉ dài hạn có lý do"});
+            this.cbTinhTrangNv.Location = new System.Drawing.Point(435, 101);
+            this.cbTinhTrangNv.Name = "cbTinhTrangNv";
+            this.cbTinhTrangNv.Size = new System.Drawing.Size(132, 21);
+            this.cbTinhTrangNv.TabIndex = 25;
             // 
-            // MainForm
+            // cbKethon
+            // 
+            this.cbKethon.FormattingEnabled = true;
+            this.cbKethon.Items.AddRange(new object[] {
+            "Độc thân",
+            "Đã kết hôn"});
+            this.cbKethon.Location = new System.Drawing.Point(435, 56);
+            this.cbKethon.Name = "cbKethon";
+            this.cbKethon.Size = new System.Drawing.Size(132, 21);
+            this.cbKethon.TabIndex = 26;
+            // 
+            // NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -547,7 +560,7 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.grBasicInfo);
             this.Controls.Add(this.pbNhanvien);
-            this.Name = "MainForm";
+            this.Name = "NhanVien";
             this.Text = "Main Form";
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbNhanvien)).EndInit();
@@ -592,12 +605,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbTongiao;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox tbChucvu;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox cbPhongban;
+        private System.Windows.Forms.ComboBox cbChucvu;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox tbKethon;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.Label label13;
@@ -607,7 +618,9 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.TextBox tbCMND;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbBophan;
+        private System.Windows.Forms.ComboBox cbTinhTrangNv;
+        private System.Windows.Forms.ComboBox cbKethon;
     }
 }
 

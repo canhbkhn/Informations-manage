@@ -7,10 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace Quanlythongtin
 {
-    public partial class MainForm : Form
+    public partial class NhanVien : Form
     {
         private string name;                            // họ tên
         private string id;                              // id nhân viên
@@ -88,6 +91,12 @@ namespace Quanlythongtin
         {
             workingTime = WorkingTime;
         }
+
+        public string getWorkingTime()
+        {
+            return workingTime;
+        }
+        
 
         public void setAddress(string Address)
         {
@@ -224,7 +233,7 @@ namespace Quanlythongtin
         /// <summary>
         /// default constructor
         /// </summary>
-        public MainForm()
+        public NhanVien()
         {
             InitializeComponent();
         }
@@ -246,9 +255,115 @@ namespace Quanlythongtin
             Application.Exit();
         }
 
+        // set information from input form
+        public void setNhanvienInfor(NhanVien nhanvien)
+        {
+            //NhanVien nhanvien = new NhanVien();
+
+            nhanvien.setName(this.tbName.Text.ToString());
+            nhanvien.setId(this.tbId.Text.ToString());
+            nhanvien.setBirthDay(this.tbNamsinh.Text.ToString());
+            nhanvien.setGender(this.cbGioiTinh.Text.ToString());
+            nhanvien.setWorkingTime(this.cbWorkingTime.Text.ToString());
+            //
+            nhanvien.setAddress(this.tbDiachi.Text.ToString());
+            nhanvien.setPhoneNumber(this.tbSdt.Text.ToString());
+            nhanvien.setLiteracy(this.cbHocvan.Text.ToString());
+            nhanvien.setWorkOn(this.tbNgayvao.Text.ToString());
+            nhanvien.setWorkOff(this.tbNgayra.Text.ToString());
+            nhanvien.setNation(this.tbDantoc.Text.ToString());
+            nhanvien.setReligion(this.tbTongiao.Text.ToString());
+            nhanvien.setDepartment(this.cbBophan.Text.ToString());
+            nhanvien.setRole(this.cbChucvu.Text.ToString());
+            nhanvien.setEmail(this.tbEmail.Text.ToString());
+            nhanvien.setMarryStatus(this.cbKethon.Text.ToString());
+            nhanvien.setStatusOfWork(this.cbTinhTrangNv.Text.ToString());
+        }
+
+        // get information from input form
+        
+
         private void btnSaveDataNv_Click(object sender, EventArgs e)
         {
+            // get employee information from input form
+            // new nhan vien
+            NhanVien nv = new NhanVien();
 
+            setNhanvienInfor(nv);
+            //Console.WriteLine(nv.getName());
+            MessageBox.Show(nv.getName());
+            // tim kiem xem da co file nhanvien.json chua? 
+            // neu co thi mo append, chua thi tao moi
+            StreamWriter wt;
+            if(!File.Exists("../../../data/nhanvien.json"))
+            {
+                wt = new StreamWriter("../../../data/nhanvien.json");
+                wt.Close();
+            }
+           
+
+            // create json object nhan vien to save
+            JObject nvOb = new JObject(
+                new JProperty("name", nv.getName()),
+                new JProperty("id", nv.getId()),
+                new JProperty("birthday", nv.getBirthDay()),
+                new JProperty("gender", nv.getGender()),
+                new JProperty("workingtime", nv.getWorkingTime()),
+                new JProperty("address", nv.getAddress()),
+                new JProperty("phonenumber", nv.getPhoneNumber()),
+                new JProperty("literacy", nv.getLiteracy()),
+                new JProperty("workon", nv.getWorkOn()),
+                new JProperty("workoff", nv.getWorkOff()),
+                new JProperty("nation", nv.getNation()),
+                new JProperty("religion", nv.getReligion()),
+                new JProperty("department", nv.getDepartment()),
+                new JProperty("role", nv.getRole()),
+                new JProperty("email", nv.getEmail()),
+                new JProperty("marrystatus", nv.getMarryStatus()),
+                new JProperty("workstatus", nv.getWorkStatus())
+                );
+
+            JArray array;
+            string fileContent = File.ReadAllText("../../../data/nhanvien.json").ToString();
+            if(fileContent.Length == 0 )
+            {
+                array = new JArray();
+            }
+            else
+            {
+                array = JArray.Parse(File.ReadAllText("../../../data/nhanvien.json"));
+                
+            }
+
+            array.Add(nvOb);
+
+            File.WriteAllText("../../../data/nhanvien.json", array.ToString());
+
+            Console.WriteLine("nhan vien -> " + array);
+
+            Console.WriteLine("Done!");
+            
+        }
+
+        private void btnReInput_Click(object sender, EventArgs e)
+        {
+            this.tbName.Text = string.Empty;
+            this.tbId.Text = string.Empty;
+            this.tbNamsinh.Text = string.Empty;
+            this.cbGioiTinh.Text = string.Empty;
+            this.cbWorkingTime.Text = string.Empty;
+            this.tbDiachi.Text = string.Empty;
+            this.tbSdt.Text = string.Empty;
+            this.cbHocvan.Text = string.Empty;
+            this.tbNgayvao.Text = string.Empty;
+            this.tbNgayra.Text = string.Empty;
+            this.tbDantoc.Text = string.Empty;
+            this.tbTongiao.Text = string.Empty;
+            this.cbBophan.Text = string.Empty;
+            this.cbChucvu.Text = string.Empty;
+            this.tbEmail.Text = string.Empty;
+            this.cbKethon.Text = string.Empty;
+            this.cbTinhTrangNv.Text = string.Empty;
         }
     }
 }

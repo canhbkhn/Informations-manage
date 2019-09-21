@@ -12,7 +12,19 @@ namespace Quanlythongtin
 {
     public partial class Search : Form
     {
+        /// <summary>
+        /// default constructor
+        /// </summary>
         public Search()
+        {
+            
+        }
+
+        /// <summary>
+        /// constructor
+        /// </summary>
+        /// <param name="path"></param>
+        public Search(string path)
         {
             InitializeComponent();
         }

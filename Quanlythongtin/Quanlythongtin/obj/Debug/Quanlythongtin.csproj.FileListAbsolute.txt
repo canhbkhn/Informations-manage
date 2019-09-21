@@ -13,7 +13,6 @@ C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlython
 C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\bin\Debug\Quanlythongtin.pdb
 C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.csprojAssemblyReference.cache
 C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.Employee.resources
-C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.MainForm.resources
 C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.Properties.Resources.resources
 C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.Search.resources
 C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.csproj.GenerateResource.cache
@@ -145,3 +144,4 @@ C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlython
 C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.csproj.CopyComplete
+C:\Users\CanhVV\Desktop\Wife_Project_InformationManage\Quanlythongtin\Quanlythongtin\obj\Debug\Quanlythongtin.NhanVien.resources

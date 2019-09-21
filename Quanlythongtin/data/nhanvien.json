@@ -1,0 +1,40 @@
+[
+  {
+    "name": "vu van canh",
+    "id": "1",
+    "birthday": "20/03/1993",
+    "gender": "Nam",
+    "workingtime": "Mùa vụ",
+    "address": "my dinh - ha noi",
+    "phonenumber": "0383483824",
+    "literacy": "Đại học",
+    "workon": "15/03/2017",
+    "workoff": "",
+    "nation": "Kinh",
+    "religion": "none",
+    "department": "Kỹ thuật",
+    "role": "Kỹ sư",
+    "email": "canhbk2003@gmail.com",
+    "marrystatus": "Đã kết hôn",
+    "workstatus": "Đang làm việc"
+  },
+  {
+    "name": "nguyen thi ngoc huong",
+    "id": "2",
+    "birthday": "19/02/1993",
+    "gender": "Nữ",
+    "workingtime": "Partime",
+    "address": "my dinh - ha noi",
+    "phonenumber": "0984372576",
+    "literacy": "Đại học",
+    "workon": "05/09/2019",
+    "workoff": "",
+    "nation": "Kinh",
+    "religion": "none",
+    "department": "Nhân sự",
+    "role": "Nhân viên",
+    "email": "huongntn@gmail.com",
+    "marrystatus": "Đã kết hôn",
+    "workstatus": "Đang làm việc"
+  }
+]
