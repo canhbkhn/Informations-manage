@@ -12,12 +12,24 @@ namespace Quanlythongtin
 {
     public partial class Search : Form
     {
+
+        private string path;
+
+        public void setPath(string _path)
+        {
+            path = _path;
+        }
+
+        public string getPath()
+        {
+            return path;
+        }
         /// <summary>
         /// default constructor
         /// </summary>
         public Search()
         {
-            
+            InitializeComponent();
         }
 
         /// <summary>
@@ -27,6 +39,7 @@ namespace Quanlythongtin
         public Search(string path)
         {
             InitializeComponent();
+            setPath(path);
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -39,7 +52,9 @@ namespace Quanlythongtin
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            Employee employ = new Employee();
+            //Search s = new Search();
+            NhanVien nv = new NhanVien();
+            Employee employ = new Employee(getPath(), nv);
             employ.Show();
         }
     }

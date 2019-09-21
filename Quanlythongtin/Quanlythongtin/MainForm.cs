@@ -245,7 +245,7 @@ namespace Quanlythongtin
 
         private void btnTTNV_Click(object sender, EventArgs e)
         {
-            Search search = new Search();
+            Search search = new Search("../../../data/nhanvien.json");
             search.Show();
         }
 
