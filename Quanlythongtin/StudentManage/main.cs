@@ -17,5 +17,9 @@ namespace StudentManage
             InitializeComponent();
         }
 
+        private void comboBox6_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

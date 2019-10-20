@@ -1,0 +1,22 @@
+[
+  {
+    "name": "canhvv1",
+    "id": "1",
+    "birthday": "2003",
+    "gender": "Nam",
+    "workingtime": "Hành chính",
+    "address": "my dinh",
+    "phonenumber": "123456789",
+    "literacy": "Đại học",
+    "workon": "12/3/2009",
+    "workoff": "12/3/2019",
+    "nation": "kinh",
+    "religion": "khong",
+    "department": "Kỹ thuật",
+    "role": "Kỹ sư",
+    "email": "canhbk2003@gmail.com",
+    "marrystatus": "Đã kết hôn",
+    "workstatus": "Đang làm việc",
+    "imagefilepath": null
+  }
+]

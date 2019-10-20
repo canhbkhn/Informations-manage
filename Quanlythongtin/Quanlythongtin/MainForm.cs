@@ -367,7 +367,6 @@ namespace Quanlythongtin
             if(fileDialog.ShowDialog() == DialogResult.OK)
             {
                 filePath = fileDialog.FileName;
-
             }
 
             Console.WriteLine("img path -> " + filePath);
