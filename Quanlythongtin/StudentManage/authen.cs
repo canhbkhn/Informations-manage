@@ -25,6 +25,7 @@ namespace StudentManage
             // authen name and authen password get form authen form
             string authenName = this.tbUserName.Text.ToString();
             string authenPassword = this.tbPassword.Text.ToString();
+            //this.tbPassword.UseSystemPasswordChar = true;
 
             if(authenName == string.Empty || authenPassword == string.Empty)
             {
@@ -44,18 +45,12 @@ namespace StudentManage
                     this.Hide();
                     main input = new main();
                     input.Show();
-
-                    Console.WriteLine("input is disposed" + input.IsDisposed.ToString());
-                    if (input.IsDisposed)
-                    {
-                        Console.WriteLine("i1nput is disposed" + input.IsDisposed.ToString());
-                    }
                 }
-                //else
-                //{
-                //    MessageBox.Show("User name hoac mat khau nhap vao khong dung, hay nhap lai.");
-                    
-                //}
+                
+                if(authenName == (string)authenObj["name"] && authenPassword != (string)authenObj["password"])
+                {
+                    MessageBox.Show("Tài khoản không đúng");
+                }
             }
         }
 

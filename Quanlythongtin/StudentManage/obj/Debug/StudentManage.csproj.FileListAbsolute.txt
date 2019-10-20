@@ -3,7 +3,6 @@ D:\Dev\Thực tập kỹ thuật\Wife_Project_InformationManage\Quanlythongtin\S
 D:\Dev\Thực tập kỹ thuật\Wife_Project_InformationManage\Quanlythongtin\StudentManage\bin\Debug\StudentManage.pdb
 D:\Dev\Thực tập kỹ thuật\Wife_Project_InformationManage\Quanlythongtin\StudentManage\bin\Debug\Newtonsoft.Json.dll
 D:\Dev\Thực tập kỹ thuật\Wife_Project_InformationManage\Quanlythongtin\StudentManage\bin\Debug\Newtonsoft.Json.xml
-D:\Dev\Thực tập kỹ thuật\Wife_Project_InformationManage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.csprojAssemblyReference.cache
 D:\Dev\Thực tập kỹ thuật\Wife_Project_InformationManage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.authen.resources
 D:\Dev\Thực tập kỹ thuật\Wife_Project_InformationManage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.main.resources
 D:\Dev\Thực tập kỹ thuật\Wife_Project_InformationManage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.Properties.Resources.resources
@@ -13,3 +12,4 @@ D:\Dev\Thực tập kỹ thuật\Wife_Project_InformationManage\Quanlythongtin\S
 D:\Dev\Thực tập kỹ thuật\Wife_Project_InformationManage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.exe
 D:\Dev\Thực tập kỹ thuật\Wife_Project_InformationManage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.pdb
 D:\Dev\Thực tập kỹ thuật\Wife_Project_InformationManage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.Tim_kiem.resources
+D:\Dev\Thực tập kỹ thuật\Wife_Project_InformationManage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.csprojAssemblyReference.cache

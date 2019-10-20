@@ -29,5 +29,10 @@ namespace StudentManage
             this.textBox1.Text = string.Empty;
             this.textBox2.Text = string.Empty;
         }
+
+        private void btnTimkiem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

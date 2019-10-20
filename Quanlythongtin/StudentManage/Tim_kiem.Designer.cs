@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lbMshs = new System.Windows.Forms.Label();
-            this.lbHoten = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lbHoten = new System.Windows.Forms.Label();
+            this.lbMshs = new System.Windows.Forms.Label();
             this.btnXemtatca = new System.Windows.Forms.Button();
             this.btnTimkiem = new System.Windows.Forms.Button();
             this.btnNhaplai = new System.Windows.Forms.Button();
@@ -53,14 +53,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin tìm kiếm";
             // 
-            // lbMshs
+            // textBox2
             // 
-            this.lbMshs.AutoSize = true;
-            this.lbMshs.Location = new System.Drawing.Point(30, 44);
-            this.lbMshs.Name = "lbMshs";
-            this.lbMshs.Size = new System.Drawing.Size(86, 13);
-            this.lbMshs.TabIndex = 0;
-            this.lbMshs.Text = "Số hiệu học sinh";
+            this.textBox2.Location = new System.Drawing.Point(123, 116);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(236, 20);
+            this.textBox2.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(123, 41);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(236, 20);
+            this.textBox1.TabIndex = 2;
             // 
             // lbHoten
             // 
@@ -71,19 +76,14 @@
             this.lbHoten.TabIndex = 1;
             this.lbHoten.Text = "Họ và tên";
             // 
-            // textBox1
+            // lbMshs
             // 
-            this.textBox1.Location = new System.Drawing.Point(123, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(236, 20);
-            this.textBox1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(123, 116);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(236, 20);
-            this.textBox2.TabIndex = 3;
+            this.lbMshs.AutoSize = true;
+            this.lbMshs.Location = new System.Drawing.Point(30, 44);
+            this.lbMshs.Name = "lbMshs";
+            this.lbMshs.Size = new System.Drawing.Size(86, 13);
+            this.lbMshs.TabIndex = 0;
+            this.lbMshs.Text = "Số hiệu học sinh";
             // 
             // btnXemtatca
             // 
@@ -102,6 +102,7 @@
             this.btnTimkiem.TabIndex = 2;
             this.btnTimkiem.Text = "Tìm kiếm";
             this.btnTimkiem.UseVisualStyleBackColor = true;
+            this.btnTimkiem.Click += new System.EventHandler(this.btnTimkiem_Click);
             // 
             // btnNhaplai
             // 

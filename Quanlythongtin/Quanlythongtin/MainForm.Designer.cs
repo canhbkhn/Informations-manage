@@ -44,6 +44,9 @@
             this.lbName = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.cbKethon = new System.Windows.Forms.ComboBox();
+            this.cbTinhTrangNv = new System.Windows.Forms.ComboBox();
+            this.cbBophan = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.tbEmail = new System.Windows.Forms.TextBox();
@@ -71,9 +74,6 @@
             this.btnSaveDataNv = new System.Windows.Forms.Button();
             this.btnReInput = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.cbBophan = new System.Windows.Forms.ComboBox();
-            this.cbTinhTrangNv = new System.Windows.Forms.ComboBox();
-            this.cbKethon = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbNhanvien)).BeginInit();
             this.grBasicInfo.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -260,6 +260,44 @@
             this.tabPage1.Size = new System.Drawing.Size(573, 422);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Thông tin cơ bản";
+            // 
+            // cbKethon
+            // 
+            this.cbKethon.FormattingEnabled = true;
+            this.cbKethon.Items.AddRange(new object[] {
+            "Độc thân",
+            "Đã kết hôn"});
+            this.cbKethon.Location = new System.Drawing.Point(435, 56);
+            this.cbKethon.Name = "cbKethon";
+            this.cbKethon.Size = new System.Drawing.Size(132, 21);
+            this.cbKethon.TabIndex = 26;
+            // 
+            // cbTinhTrangNv
+            // 
+            this.cbTinhTrangNv.FormattingEnabled = true;
+            this.cbTinhTrangNv.Items.AddRange(new object[] {
+            "Đã thôi việc",
+            "Đang làm việc",
+            "Nghỉ dài hạn có lý do"});
+            this.cbTinhTrangNv.Location = new System.Drawing.Point(435, 101);
+            this.cbTinhTrangNv.Name = "cbTinhTrangNv";
+            this.cbTinhTrangNv.Size = new System.Drawing.Size(132, 21);
+            this.cbTinhTrangNv.TabIndex = 25;
+            // 
+            // cbBophan
+            // 
+            this.cbBophan.FormattingEnabled = true;
+            this.cbBophan.Items.AddRange(new object[] {
+            "Kỹ thuật",
+            "Hành chính",
+            "Nhân sự",
+            "Tổng hợp",
+            "Kế toán",
+            "Quản trị"});
+            this.cbBophan.Location = new System.Drawing.Point(122, 330);
+            this.cbBophan.Name = "cbBophan";
+            this.cbBophan.Size = new System.Drawing.Size(158, 21);
+            this.cbBophan.TabIndex = 24;
             // 
             // label15
             // 
@@ -510,44 +548,6 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // cbBophan
-            // 
-            this.cbBophan.FormattingEnabled = true;
-            this.cbBophan.Items.AddRange(new object[] {
-            "Kỹ thuật",
-            "Hành chính",
-            "Nhân sự",
-            "Tổng hợp",
-            "Kế toán",
-            "Quản trị"});
-            this.cbBophan.Location = new System.Drawing.Point(122, 330);
-            this.cbBophan.Name = "cbBophan";
-            this.cbBophan.Size = new System.Drawing.Size(158, 21);
-            this.cbBophan.TabIndex = 24;
-            // 
-            // cbTinhTrangNv
-            // 
-            this.cbTinhTrangNv.FormattingEnabled = true;
-            this.cbTinhTrangNv.Items.AddRange(new object[] {
-            "Đã thôi việc",
-            "Đang làm việc",
-            "Nghỉ dài hạn có lý do"});
-            this.cbTinhTrangNv.Location = new System.Drawing.Point(435, 101);
-            this.cbTinhTrangNv.Name = "cbTinhTrangNv";
-            this.cbTinhTrangNv.Size = new System.Drawing.Size(132, 21);
-            this.cbTinhTrangNv.TabIndex = 25;
-            // 
-            // cbKethon
-            // 
-            this.cbKethon.FormattingEnabled = true;
-            this.cbKethon.Items.AddRange(new object[] {
-            "Độc thân",
-            "Đã kết hôn"});
-            this.cbKethon.Location = new System.Drawing.Point(435, 56);
-            this.cbKethon.Name = "cbKethon";
-            this.cbKethon.Size = new System.Drawing.Size(132, 21);
-            this.cbKethon.TabIndex = 26;
-            // 
             // NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -561,6 +561,7 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.grBasicInfo);
             this.Controls.Add(this.pbNhanvien);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "NhanVien";
             this.Text = "Main Form";
             this.Load += new System.EventHandler(this.MainForm_Load);

@@ -629,6 +629,7 @@
             this.btnViewInfo.TabIndex = 4;
             this.btnViewInfo.Text = "Xem thông tin HS";
             this.btnViewInfo.UseVisualStyleBackColor = true;
+            this.btnViewInfo.Click += new System.EventHandler(this.btnViewInfo_Click);
             // 
             // btnSave
             // 
@@ -638,6 +639,7 @@
             this.btnSave.TabIndex = 5;
             this.btnSave.Text = "Lưu ";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnReinput
             // 
@@ -656,6 +658,7 @@
             this.btnExit.TabIndex = 7;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // main
             // 
@@ -670,8 +673,11 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnInsertImg);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
             this.Name = "main";
             this.Text = "Thông tin";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.main_FormClosing);
+            this.Load += new System.EventHandler(this.main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

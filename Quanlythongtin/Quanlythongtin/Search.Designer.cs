@@ -135,6 +135,7 @@
             this.Controls.Add(this.btnReinput);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
             this.Name = "Search";
             this.Text = "Search";
             this.groupBox1.ResumeLayout(false);
