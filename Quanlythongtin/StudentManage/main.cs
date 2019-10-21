@@ -81,6 +81,19 @@ namespace StudentManage
                 wt.Close();
             }
 
+            // 
+            if(this.tbToan.Text.ToString() == ""
+                ||this.tbVatly.Text.ToString() == "" 
+                || this.tbNguvan.Text.ToString() == ""
+                || this.tbTienganh.Text.ToString() == ""
+                || this.tbSinhhoc.Text.ToString() == ""
+                || this.tbHoahoc.Text.ToString() == ""
+                )
+            {
+                MessageBox.Show("Hãy nhập điểm cho học sinh (nhập số nguyên)");
+                return;
+            }
+
             // compute diem trung binh
             int diemTb = (Convert.ToInt32(this.tbToan.Text.ToString()) +
                 Convert.ToInt32(this.tbVatly.Text.ToString()) +
