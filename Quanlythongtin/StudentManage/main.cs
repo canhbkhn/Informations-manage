@@ -14,6 +14,8 @@ namespace StudentManage
 {
     public partial class main : Form
     {
+        // Image file path
+        private string imgPath;
         public main()
         {
             InitializeComponent();
@@ -34,7 +36,22 @@ namespace StudentManage
 
         private void main_Load(object sender, EventArgs e)
         {
+            if(this.cbTinhtrang.Text == "Đang học")
+            {
+                this.cbLydothoihoc.Enabled = false;
+                this.tbNgaythoihoc.Enabled = false;
+            }
+        }
 
+        // img path
+        public void SetImgPath(string _imgPath)
+        {
+            imgPath = _imgPath;
+        }
+
+        public string GetImgPath()
+        {
+            return imgPath;
         }
 
 
@@ -47,7 +64,8 @@ namespace StudentManage
         private void btnViewInfo_Click(object sender, EventArgs e)
         {
             // TODO: xem toan bo thong tin hoac thong tin tim kiem
-
+            Tim_kiem tk = new Tim_kiem("../../../data/hocsinh.json");
+            tk.Show();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -72,7 +90,7 @@ namespace StudentManage
                 Convert.ToInt32(this.tbHoahoc.Text.ToString())
                 ) / 6;
 
-            // create json object nhan vien to save
+            // create json object hoc sinh to save
             JObject nvOb = new JObject(
                 new JProperty("ho_ten", this.tbName.Text.ToString()),
                 new JProperty("shhs", this.tbMshs.Text.ToString()),
@@ -92,7 +110,8 @@ namespace StudentManage
                 new JProperty("ly_do_thoi_hoc", this.cbLydothoihoc.Text.ToString()),
                 new JProperty("diem_tb", diemTb.ToString()),
                 new JProperty("hoc_ky", this.cbHocky.Text.ToString()),
-                new JProperty("nam_hoc", this.tbNamhoc.Text.ToString())
+                new JProperty("nam_hoc", this.tbNamhoc.Text.ToString()),
+                new JProperty("file_anh", GetImgPath())
                 );
 
             JArray array;
@@ -114,6 +133,21 @@ namespace StudentManage
 
             Console.WriteLine("Done!");
         }
-    }
+
+        private void btnInsertImg_Click(object sender, EventArgs e)
+        {
+            string filePath = string.Empty;
+
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.Filter = "jpg files (*.jpg)|*.jpg|png file (*.png)|*.png|All files (*.*)|*.*";
+
+            if (fileDialog.ShowDialog() == DialogResult.OK)
+            {
+                filePath = fileDialog.FileName;
+            }
+
+            Console.WriteLine("img path -> " + filePath);
+            SetImgPath(filePath);
+        }
     }
 }

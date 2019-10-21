@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnExit = new System.Windows.Forms.Button();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.shhs = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cmnd = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,6 +48,8 @@
             this.diemtrungbinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hocky = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namhoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.imgpath = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,21 +75,12 @@
             this.lydothoihoc,
             this.diemtrungbinh,
             this.hocky,
-            this.namhoc});
+            this.namhoc,
+            this.imgpath});
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1207, 258);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(1144, 276);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.Text = "Thoát";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // name
             // 
@@ -185,6 +177,21 @@
             this.namhoc.HeaderText = "Năm học";
             this.namhoc.Name = "namhoc";
             // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(1144, 276);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.Text = "Thoát";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // imgpath
+            // 
+            this.imgpath.HeaderText = "Đường dẫn file ảnh";
+            this.imgpath.Name = "imgpath";
+            // 
             // Student
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -222,5 +229,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn diemtrungbinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn hocky;
         private System.Windows.Forms.DataGridViewTextBoxColumn namhoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn imgpath;
     }
 }

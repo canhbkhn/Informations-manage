@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbName = new System.Windows.Forms.TextBox();
+            this.tbShhs = new System.Windows.Forms.TextBox();
             this.lbHoten = new System.Windows.Forms.Label();
             this.lbMshs = new System.Windows.Forms.Label();
             this.btnXemtatca = new System.Windows.Forms.Button();
@@ -42,8 +42,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tbName);
+            this.groupBox1.Controls.Add(this.tbShhs);
             this.groupBox1.Controls.Add(this.lbHoten);
             this.groupBox1.Controls.Add(this.lbMshs);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -53,19 +53,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin tìm kiếm";
             // 
-            // textBox2
+            // tbName
             // 
-            this.textBox2.Location = new System.Drawing.Point(123, 116);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(236, 20);
-            this.textBox2.TabIndex = 3;
+            this.tbName.Location = new System.Drawing.Point(123, 116);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(236, 20);
+            this.tbName.TabIndex = 3;
             // 
-            // textBox1
+            // tbShhs
             // 
-            this.textBox1.Location = new System.Drawing.Point(123, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(236, 20);
-            this.textBox1.TabIndex = 2;
+            this.tbShhs.Location = new System.Drawing.Point(123, 41);
+            this.tbShhs.Name = "tbShhs";
+            this.tbShhs.Size = new System.Drawing.Size(236, 20);
+            this.tbShhs.TabIndex = 2;
             // 
             // lbHoten
             // 
@@ -93,6 +93,7 @@
             this.btnXemtatca.TabIndex = 1;
             this.btnXemtatca.Text = "Xem toàn bộ";
             this.btnXemtatca.UseVisualStyleBackColor = true;
+            this.btnXemtatca.Click += new System.EventHandler(this.btnXemtatca_Click);
             // 
             // btnTimkiem
             // 
@@ -145,8 +146,8 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbName;
+        private System.Windows.Forms.TextBox tbShhs;
         private System.Windows.Forms.Label lbHoten;
         private System.Windows.Forms.Label lbMshs;
         private System.Windows.Forms.Button btnXemtatca;

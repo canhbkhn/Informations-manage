@@ -30,56 +30,71 @@ namespace StudentManage
 
             int objectLength = jStudent.Count;
 
-            // tim kiem xem da co file nhanvien.json chua? 
-            // neu co thi mo append, chua thi tao moi
-            StreamWriter wt;
-            if (!File.Exists("../../../data/hocsinh.json"))
+            for(int i = 0; i< objectLength; i++)
             {
-                wt = new StreamWriter("../../../data/hocsinh.json");
-                wt.Close();
+                string[] row = new string[]{
+                    (string)jStudent[i]["ho_ten"],
+                    (string)jStudent[i]["shhs"],
+                    (string)jStudent[i]["cmnd"],
+                    (string)jStudent[i]["nam_sinh"],
+                    (string)jStudent[i]["gioi_tinh"],
+                    (string)jStudent[i]["lop"],
+                                   (string)jStudent[i]["dia_chi"],
+                                      (string)jStudent[i]["so_dt"],
+                                         (string)jStudent[i]["dan_toc"],
+                                            (string)jStudent[i]["ton_giao"],
+                                               (string)jStudent[i]["chuc_vu"],
+                                                  (string)jStudent[i]["email"],
+                                                     (string)jStudent[i]["tinh_trang_hs"],
+                                                        (string)jStudent[i]["ngay_vao_hoc"],
+                                                           (string)jStudent[i]["ngay_thoi_hoc"],
+                                                              (string)jStudent[i]["ly_do_thoi_hoc"],
+                                                                 (string)jStudent[i]["diem_tb"],
+                                                                    (string)jStudent[i]["hoc_ky"],
+                                                                    (string)jStudent[i]["nam_hoc"],
+                                                                    (string)jStudent[i]["file_anh"]
+
+
+                };
+
+                dataGridView1.Rows.Add(row);
             }
 
-            // create json object nhan vien to save
-            JObject nvOb = new JObject(
-                new JProperty("name", nv.getName()),
-                new JProperty("id", nv.getId()),
-                new JProperty("birthday", nv.getBirthDay()),
-                new JProperty("gender", nv.getGender()),
-                new JProperty("workingtime", nv.getWorkingTime()),
-                new JProperty("address", nv.getAddress()),
-                new JProperty("phonenumber", nv.getPhoneNumber()),
-                new JProperty("literacy", nv.getLiteracy()),
-                new JProperty("workon", nv.getWorkOn()),
-                new JProperty("workoff", nv.getWorkOff()),
-                new JProperty("nation", nv.getNation()),
-                new JProperty("religion", nv.getReligion()),
-                new JProperty("department", nv.getDepartment()),
-                new JProperty("role", nv.getRole()),
-                new JProperty("email", nv.getEmail()),
-                new JProperty("marrystatus", nv.getMarryStatus()),
-                new JProperty("workstatus", nv.getWorkStatus()),
-                new JProperty("imagefilepath", nv.getPathImg())
-                );
 
-            JArray array;
-            string fileContent = File.ReadAllText("../../../data/hocsinh.json").ToString();
-            if (fileContent.Length == 0)
+        }
+
+        public void search(JArray listStudent)
+        {
+            // log
+            Console.WriteLine("So hoc sinh tim thay -> " + listStudent.Count);
+
+            for (int i = 0; i < listStudent.Count; i++)
             {
-                array = new JArray();
+                string[] row = new string[] {
+                    (string)listStudent[i]["ho_ten"],
+                    (string)listStudent[i]["shhs"],
+                    (string)listStudent[i]["cmnd"],
+                    (string)listStudent[i]["nam_sinh"],
+                    (string)listStudent[i]["gioi_tinh"],
+                    (string)listStudent[i]["lop"],
+                    (string)listStudent[i]["dia_chi"],
+                    (string)listStudent[i]["so_dt"],
+                    (string)listStudent[i]["dan_toc"],
+                    (string)listStudent[i]["ton_giao"],
+                    (string)listStudent[i]["chuc_vu"],
+                    (string)listStudent[i]["email"],
+                    (string)listStudent[i]["tinh_trang_hs"],
+                    (string)listStudent[i]["ngay_vao_hoc"],
+                    (string)listStudent[i]["ngay_thoi_hoc"],
+                    (string)listStudent[i]["ly_do_thoi_hoc"],
+                    (string)listStudent[i]["diem_tb"],
+                    (string)listStudent[i]["hoc_ky"],
+                    (string)listStudent[i]["nam_hoc"],
+                    (string)listStudent[i]["file_anh"]
+                };
+
+                dataGridView1.Rows.Add(row);
             }
-            else
-            {
-                array = JArray.Parse(File.ReadAllText("../../../data/hocsinh.json"));
-            }
-
-            array.Add(hsObj);
-
-            File.WriteAllText("../../../data/hocsinh.json", array.ToString());
-
-            Console.WriteLine("hoc sinh -> " + array);
-
-            Console.WriteLine("Done!");
-
         }
 
         private void btnExit_Click(object sender, EventArgs e)
