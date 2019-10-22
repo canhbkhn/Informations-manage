@@ -161,6 +161,10 @@ namespace StudentManage
 
             Console.WriteLine("img path -> " + filePath);
             SetImgPath(filePath);
+
+            // display image to picture box
+            pictureBox1.Image = new Bitmap(filePath);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
     }
 }
