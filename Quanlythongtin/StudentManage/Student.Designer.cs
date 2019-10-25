@@ -48,8 +48,9 @@
             this.diemtrungbinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hocky = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namhoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnExit = new System.Windows.Forms.Button();
             this.imgpath = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.img = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,11 +77,14 @@
             this.diemtrungbinh,
             this.hocky,
             this.namhoc,
-            this.imgpath});
+            this.imgpath,
+            this.img});
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1207, 258);
+            this.dataGridView1.Size = new System.Drawing.Size(1207, 452);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // name
             // 
@@ -177,9 +181,19 @@
             this.namhoc.HeaderText = "Năm học";
             this.namhoc.Name = "namhoc";
             // 
+            // imgpath
+            // 
+            this.imgpath.HeaderText = "Đường dẫn file ảnh";
+            this.imgpath.Name = "imgpath";
+            // 
+            // img
+            // 
+            this.img.HeaderText = "Hình ảnh";
+            this.img.Name = "img";
+            // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(1144, 276);
+            this.btnExit.Location = new System.Drawing.Point(1144, 470);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 1;
@@ -187,18 +201,14 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // imgpath
-            // 
-            this.imgpath.HeaderText = "Đường dẫn file ảnh";
-            this.imgpath.Name = "imgpath";
-            // 
             // Student
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1231, 311);
+            this.ClientSize = new System.Drawing.Size(1231, 505);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.dataGridView1);
+            this.MaximizeBox = false;
             this.Name = "Student";
             this.Text = "Student";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -230,5 +240,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn hocky;
         private System.Windows.Forms.DataGridViewTextBoxColumn namhoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn imgpath;
+        private System.Windows.Forms.DataGridViewTextBoxColumn img;
     }
 }

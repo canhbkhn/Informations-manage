@@ -19,7 +19,7 @@
     "diem_tb": "10",
     "hoc_ky": "",
     "nam_hoc": "",
-    "file_anh": null
+    "file_anh": "D:\\Dev\\Thực tập kỹ thuật\\Wife_Project_InformationManage\\Quanlythongtin\\images\\window.jpg"
   },
   {
     "ho_ten": "canhvv",
@@ -41,7 +41,7 @@
     "diem_tb": "9",
     "hoc_ky": "Kỳ 2",
     "nam_hoc": "20191",
-    "file_anh": null
+    "file_anh": "D:\\Dev\\Thực tập kỹ thuật\\Wife_Project_InformationManage\\Quanlythongtin\\images\\window.jpg"
   },
   {
     "ho_ten": "vũ văn cảnh",
@@ -63,10 +63,10 @@
     "diem_tb": "9",
     "hoc_ky": "Kỳ 1",
     "nam_hoc": "20191",
-    "file_anh": null
+    "file_anh": "D:\\Dev\\Thực tập kỹ thuật\\Wife_Project_InformationManage\\Quanlythongtin\\images\\window.jpg"
   },
   {
-    "ho_ten": "vũ văn cảnh",
+    "ho_ten": "vũ văn cảnh2",
     "shhs": "2",
     "cmnd": "1234567",
     "nam_sinh": "1993",
@@ -85,6 +85,28 @@
     "diem_tb": "9",
     "hoc_ky": "Kỳ 1",
     "nam_hoc": "20191",
+    "file_anh": "D:\\Dev\\Thực tập kỹ thuật\\Wife_Project_InformationManage\\Quanlythongtin\\images\\window.jpg"
+  },
+  {
+    "ho_ten": "canhvvv",
+    "shhs": "",
+    "cmnd": "",
+    "nam_sinh": "",
+    "gioi_tinh": "",
+    "lop": "",
+    "dia_chi": "",
+    "so_dt": "",
+    "dan_toc": "",
+    "ton_giao": "",
+    "chuc_vu": "",
+    "email": "",
+    "tinh_trang_hs": "",
+    "ngay_vao_hoc": "",
+    "ngay_thoi_hoc": "",
+    "ly_do_thoi_hoc": "",
+    "diem_tb": "8",
+    "hoc_ky": "Kỳ 2",
+    "nam_hoc": "2019",
     "file_anh": "D:\\Dev\\Thực tập kỹ thuật\\Wife_Project_InformationManage\\Quanlythongtin\\images\\window.jpg"
   }
 ]

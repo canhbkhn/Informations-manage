@@ -135,6 +135,7 @@
             this.Controls.Add(this.btnTimkiem);
             this.Controls.Add(this.btnXemtatca);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
             this.Name = "Tim_kiem";
             this.Text = "Tim_kiem";
             this.groupBox1.ResumeLayout(false);
