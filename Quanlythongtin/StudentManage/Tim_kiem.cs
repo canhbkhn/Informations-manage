@@ -75,6 +75,11 @@ namespace StudentManage
                 {
                     savingList.Add(ob);
                 }
+                else
+                {
+                    MessageBox.Show("Không có học sinh này, hãy kiếm tra lại");
+                    return;
+                }
             }
 
             // search information of employee mapping search pattern

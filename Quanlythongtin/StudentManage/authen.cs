@@ -49,7 +49,7 @@ namespace StudentManage
                 
                 if(authenName == (string)authenObj["name"] && authenPassword != (string)authenObj["password"])
                 {
-                    MessageBox.Show("Tài khoản không đúng");
+                    MessageBox.Show("Tài khoản hoặc mật khẩu không đúng, xin hãy kiểm tra lại");
                 }
             }
         }

@@ -145,6 +145,8 @@ namespace StudentManage
             Console.WriteLine("hoc sinh -> " + array);
 
             Console.WriteLine("Done!");
+
+            MessageBox.Show("Lưu thông tin học sinh thành công");
         }
 
         private void btnInsertImg_Click(object sender, EventArgs e)
