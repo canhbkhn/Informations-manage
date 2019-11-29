@@ -15,3 +15,19 @@ D:\Dev\Thực tập kỹ thuật\Wife_Project_InformationManage\Quanlythongtin\S
 D:\Dev\Thực tập kỹ thuật\Wife_Project_InformationManage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.csprojAssemblyReference.cache
 D:\Dev\Thực tập kỹ thuật\Wife_Project_InformationManage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.Student.resources
 D:\Dev\Thực tập kỹ thuật\Wife_Project_InformationManage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.StudentInfo.resources
+C:\Users\CanhVV\Desktop\Informations-manage\Quanlythongtin\StudentManage\bin\Debug\StudentManage.exe.config
+C:\Users\CanhVV\Desktop\Informations-manage\Quanlythongtin\StudentManage\bin\Debug\StudentManage.exe
+C:\Users\CanhVV\Desktop\Informations-manage\Quanlythongtin\StudentManage\bin\Debug\StudentManage.pdb
+C:\Users\CanhVV\Desktop\Informations-manage\Quanlythongtin\StudentManage\bin\Debug\Newtonsoft.Json.dll
+C:\Users\CanhVV\Desktop\Informations-manage\Quanlythongtin\StudentManage\bin\Debug\Newtonsoft.Json.xml
+C:\Users\CanhVV\Desktop\Informations-manage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.authen.resources
+C:\Users\CanhVV\Desktop\Informations-manage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.main.resources
+C:\Users\CanhVV\Desktop\Informations-manage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.Properties.Resources.resources
+C:\Users\CanhVV\Desktop\Informations-manage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.Student.resources
+C:\Users\CanhVV\Desktop\Informations-manage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.StudentInfo.resources
+C:\Users\CanhVV\Desktop\Informations-manage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.Tim_kiem.resources
+C:\Users\CanhVV\Desktop\Informations-manage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.csproj.GenerateResource.cache
+C:\Users\CanhVV\Desktop\Informations-manage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.csproj.CoreCompileInputs.cache
+C:\Users\CanhVV\Desktop\Informations-manage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.csproj.CopyComplete
+C:\Users\CanhVV\Desktop\Informations-manage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.exe
+C:\Users\CanhVV\Desktop\Informations-manage\Quanlythongtin\StudentManage\obj\Debug\StudentManage.pdb

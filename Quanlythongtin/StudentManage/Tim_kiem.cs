@@ -53,39 +53,103 @@ namespace StudentManage
             Student student = new Student();
 
             JArray listFromFile = JArray.Parse(File.ReadAllText(GetPath()));
+
+            Console.WriteLine("list->" + listFromFile);
+
             JArray savingList = new JArray();
 
             // get searching pattern
-            string searchPattern = "";
+            string searchById = "";
+            string searchByName = "";
             if (this.tbShhs.Text.ToString() != string.Empty)
             {
-                searchPattern = this.tbShhs.Text.ToString();
+                searchById = this.tbShhs.Text.ToString();
+            }
 
-            }
-            else if (this.tbShhs.Text.ToString() == string.Empty && this.tbName.Text.ToString() != string.Empty)
+            if (this.tbName.Text.ToString() != string.Empty)
             {
-                searchPattern = this.tbName.Text.ToString();
+                searchByName = this.tbName.Text.ToString();
             }
-            else if (this.tbShhs.Text.ToString() == string.Empty && this.tbName.Text.ToString() == string.Empty)
+
+            if (this.tbShhs.Text.ToString() == string.Empty && this.tbName.Text.ToString() == string.Empty)
+            {
                 MessageBox.Show("Xin hãy nhập vào thông tin để tìm kiếm");
-
-            foreach (JObject ob in listFromFile)
-            {
-                if (searchPattern == (string)ob["ho_ten"] || searchPattern == (string)ob["id"])
-                {
-                    savingList.Add(ob);
-                }
-                else
-                {
-                    MessageBox.Show("Không có học sinh này, hãy kiếm tra lại");
-                    return;
-                }
+                return;
             }
 
-            // search information of employee mapping search pattern
-            // then display data for user
-            student.search(savingList);
-            student.Show();
+            //foreach (JObject ob in listFromFile)
+            //{
+            //    if (searchPattern == (string)ob["ho_ten"] || searchPattern == (string)ob["shhs"])
+            //    {
+            //        savingList.Add(ob);
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Không có học sinh này, hãy kiếm tra lại");
+            //        return;
+            //    }
+            //}
+
+            
+
+            for (int i = 0; i < listFromFile.Count; i ++ )
+            {
+                //if ((searchPattern == (string)listFromFile[i]["ho_ten"]  && (string)listFromFile[i]["ho_ten"] != "")||
+                //    (searchPattern == (string)listFromFile[i]["shhs"] && (string)listFromFile[i]["shhs"] != ""))
+                //{
+                //    savingList.Add(listFromFile[i]);             
+                //}
+                //else
+                //{
+                //    MessageBox.Show("Không có học sinh này, hãy kiếm tra lại");
+                //    return;
+                //}
+                //if(searchById == listFromFile[i]["shhs"].ToString() ||
+                //   searchByName == listFromFile[i]["ho_ten"].ToString()
+                //   )
+                //{
+                //    savingList.Add(listFromFile[i]);
+                //}
+
+                if (searchById != string.Empty && searchByName == string.Empty)
+                {
+                    if(searchById == listFromFile[i]["shhs"].ToString())
+                    {
+                        savingList.Add(listFromFile[i]);
+                    }
+                }
+
+                if(searchById == string.Empty && searchByName != string.Empty)
+                {
+                    if (searchByName == listFromFile[i]["ho_ten"].ToString())
+                    {
+                        savingList.Add(listFromFile[i]);
+                    }
+                }
+
+                if(searchById != string.Empty && searchByName != string.Empty)
+                {
+                    if (searchById == listFromFile[i]["shhs"].ToString() && searchByName == listFromFile[i]["ho_ten"].ToString())
+                    {
+                        savingList.Add(listFromFile[i]);
+                    }
+                }
+
+
+            }
+
+            if(savingList.Count != 0)
+            {
+                // search information of employee mapping search pattern
+                // then display data for user
+                student.search(savingList);
+                student.Show();
+            }
+            else
+            {
+                MessageBox.Show("Không có học sinh này, hãy kiếm tra lại");
+                return;
+            }
         }
 
         private void btnXemtatca_Click(object sender, EventArgs e)

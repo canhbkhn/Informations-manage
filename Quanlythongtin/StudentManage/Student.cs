@@ -53,7 +53,7 @@ namespace StudentManage
                                                                     (string)jStudent[i]["hoc_ky"],
                                                                     (string)jStudent[i]["nam_hoc"],
                                                                     (string)jStudent[i]["file_anh"],
-                                                                   (new Bitmap( (string)jStudent[i]["file_anh"]))
+                                                                   
 
 
                 };
@@ -97,7 +97,7 @@ namespace StudentManage
                     (string)listStudent[i]["file_anh"]
                 };
 
-                dataGridView1.Rows.Add(row, Bitmap.FromFile((string)listStudent[i]["file_anh"]));
+                dataGridView1.Rows.Add(row);
             }
         }
 
